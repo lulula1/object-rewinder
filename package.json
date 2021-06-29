@@ -1,9 +1,14 @@
 {
-  "name": "object-history",
-  "version": "0.1.0",
+  "name": "object-rewind",
+  "version": "1.0.0",
   "description": "Generic object versioning, undo or redo modifications",
+  "homepage": "https://github.com/lulula1/object-rewind#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lulula1/object-rewind.git"
+  },
   "scripts": {
     "start": "node .",
     "watch": "tsc --watch",
@@ -22,6 +27,7 @@
   },
   "keywords": [
     "object",
+    "rewind",
     "history",
     "versioning"
   ]
