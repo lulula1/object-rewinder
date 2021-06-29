@@ -1,2 +1,3 @@
-export { default as IObjectHistory } from './IObjectHistory';
-export { default } from './ObjectHistory';
+export { default as IObjectRewind } from './IObjectRewind';
+export { default } from './ObjectRewind';
+export * from './changes';
