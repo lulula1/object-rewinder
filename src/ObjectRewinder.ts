@@ -1,9 +1,9 @@
-import IObjectRewind, { State } from './IObjectRewind';
+import IObjectRewinder, { State } from './IObjectRewinder';
 import AbstractChange from './changes/AbstractChange';
 import SetChange from './changes/SetChange';
 import DeleteChange from './changes/DeleteChange';
 
-export default class ObjectRewind implements IObjectRewind {
+export default class ObjectRewinder implements IObjectRewinder {
     private readonly dataset: any;
     private readonly proxy: ProxyConstructor;
     private state: State = 0;

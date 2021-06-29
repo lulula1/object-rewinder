@@ -1,12 +1,12 @@
-import IObjectRewind, { State } from '../src/IObjectRewind'
-import ObjectRewind from '../src/ObjectRewind'
+import IObjectRewinder, { State } from '../src/IObjectRewinder'
+import ObjectRewinder from '../src/ObjectRewinder'
 
 let dataset: { [k: string]: any } = null
-let testcase: IObjectRewind = null
+let testcase: IObjectRewinder = null
 
 beforeEach(function () {
   dataset = {}
-  testcase = new ObjectRewind(dataset)
+  testcase = new ObjectRewinder(dataset)
   dataset = testcase.getObject()
 })
 

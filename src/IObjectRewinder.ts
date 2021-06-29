@@ -1,6 +1,6 @@
 export type State = number;
 
-export default interface IObjectRewind {
+export default interface IObjectRewinder {
     getObject(): ProxyConstructor;
     back(): void;
     forward(): void;

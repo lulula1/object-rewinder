@@ -1,13 +1,13 @@
 {
-  "name": "object-rewind",
+  "name": "object-rewinder",
   "version": "1.0.0",
   "description": "Generic object versioning, undo or redo modifications",
-  "homepage": "https://github.com/lulula1/object-rewind#readme",
+  "homepage": "https://github.com/lulula1/object-rewinder#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lulula1/object-rewind.git"
+    "url": "https://github.com/lulula1/object-rewinder.git"
   },
   "scripts": {
     "start": "node .",
