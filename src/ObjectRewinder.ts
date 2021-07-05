@@ -52,13 +52,13 @@ export default class ObjectRewinder implements IObjectRewinder {
     }
 
     private handleSet(target: any, property: string | symbol, value: any): boolean {
-        this.pushChange(new SetChange(target[property], property, value));
+        this.pushChange(new SetChange(target, property, value));
         target[property] = JSON.parse(JSON.stringify(value));
         return true;
     }
 
     private handleDelete(target: any, property: string | symbol): boolean {
-        this.pushChange(new DeleteChange(target[property], property));
+        this.pushChange(new DeleteChange(target, property));
         delete target[property];
         return true;
     }

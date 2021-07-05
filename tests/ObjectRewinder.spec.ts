@@ -147,4 +147,14 @@ describe('test method behaviours', function () {
     testcase.back()
     expect(dataset).toEqual({ obj: {} })
   })
+
+  it('should delete property on rewind', function () {
+    expect(dataset).toEqual({})
+    dataset.x = 42
+    expect(dataset).toEqual({ x: 42 })
+    testcase.back()
+    expect(Object.keys(dataset).length).toBe(0)
+  })
+})
+
 })
