@@ -14,7 +14,7 @@ let rewinder = new ObjectRewinder(dataToWatch);
 dataToWatch = rewinder.getObject(); // Overwrite the data with the observed one
 
 // From now on every change on "dataToWatch" will be recorded
-// And We're be able to rollback thoses changes
+// And we'll be able to rollback thoses changes
 
 dataToWatch.value = 'very good value'
 console.log(dataToWatch);
